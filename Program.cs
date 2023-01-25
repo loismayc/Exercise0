@@ -71,19 +71,14 @@ namespace CarFactory
                     Car temp = (Car)v;
 
                     Console.WriteLine("\nVehicle is a car:");
-                    Console.WriteLine("Color: " + v.Color);
-                    Console.WriteLine("Brand: " + v.Brand);
-                    Console.WriteLine("Model: " + ((Car)v).Model);
+                    temp.DisplayVehicle();
 
                 }
                 else if (v.GetType() == typeof(Truck))
                 {
                     Truck temp = (Truck)v;
                     Console.WriteLine("\nVehicle is a truck:");
-                    Console.WriteLine("Color: " + v.Color);
-                    Console.WriteLine("Brand: " + v.Brand);
-                    Console.WriteLine("Model: " + ((Truck)v).Model);
-                    Console.WriteLine("Capacity: " + ((Truck)v).Capacity);
+                    temp.DisplayVehicle();
 
                 }
             }
